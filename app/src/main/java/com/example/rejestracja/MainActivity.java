@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
         zatwierdz = findViewById(R.id.zatwierdz);
         tekst = findViewById(R.id.tekst);
 
-        haslo.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        haslo2.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-
             zatwierdz.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -46,5 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     {tekst.setText("Witaj " + emaill);}
                 }
             });
+
+        haslo.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        haslo2.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+
         }
     }
